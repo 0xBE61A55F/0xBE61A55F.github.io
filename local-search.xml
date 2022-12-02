@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>GCP安裝Chrome-Remote-Desktop</title>
+    <link href="/2022/12/03/Chrome-Remote-Desktop/"/>
+    <url>/2022/12/03/Chrome-Remote-Desktop/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GCP-安裝-Chrome-Remote-Desktop"><a href="#GCP-安裝-Chrome-Remote-Desktop" class="headerlink" title="GCP 安裝 Chrome-Remote-Desktop"></a>GCP 安裝 Chrome-Remote-Desktop</h1><h2 id="環境"><a href="#環境" class="headerlink" title="環境"></a>環境</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs !">GCP N1<br>Ubuntu 22.04 LTS x86_64 <br></code></pre></td></tr></table></figure><h2 id="VPS安裝Chrome遠端桌面"><a href="#VPS安裝Chrome遠端桌面" class="headerlink" title="VPS安裝Chrome遠端桌面"></a>VPS安裝Chrome遠端桌面</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs !">wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb<br><br>sudo apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.deb<br></code></pre></td></tr></table></figure><h2 id="安裝桌面環境"><a href="#安裝桌面環境" class="headerlink" title="安裝桌面環境"></a>安裝桌面環境</h2><ul><li><p>更新存儲庫</p><figure class="highlight sas"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sas">sudo apt <span class="hljs-keyword">update</span> <span class="hljs-variable">&amp;&amp;</span> sudo apt upgrade<br></code></pre></td></tr></table></figure></li><li><p>安裝並設置顯示管理器。使用slim是因為它的輕量級特性</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">sudo apt <span class="hljs-keyword">install</span> slim<br></code></pre></td></tr></table></figure></li><li><p>安裝Ubuntu桌面環境</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">sudo apt <span class="hljs-keyword">install</span> ubuntu-desktop<br></code></pre></td></tr></table></figure></li><li><p>安裝完成後，重啟機器</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo reboot</span><br></code></pre></td></tr></table></figure></li><li><p>重啟後會失去連接。再次通過 SSH 進入虛擬機啟動 slim</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">sudo service slim <span class="hljs-literal">start</span><br></code></pre></td></tr></table></figure></li></ul><h2 id="配置Chrome-Remote-Desktop"><a href="#配置Chrome-Remote-Desktop" class="headerlink" title="配置Chrome-Remote-Desktop"></a>配置Chrome-Remote-Desktop</h2><ul><li><p>設定其他電腦，並持續下一步<br><img src="https://i.imgur.com/F8KFXfj.png"></p></li><li><p>將最後一步指令複製到VPS主機上<br><img src="https://i.imgur.com/9UEbfJm.png"></p></li><li><p>輸入六位數PIN，即可成功<br><img src="https://i.imgur.com/iMVL2xA.png"></p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>筆記</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>VPS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Pwn基礎知識</title>
     <link href="/2022/11/30/Pwn%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98/"/>
     <url>/2022/11/30/Pwn%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98/</url>
